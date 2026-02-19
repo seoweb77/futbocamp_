@@ -1,0 +1,384 @@
+html
+<!-- HTML /calendar/vesna-2026.html
+  -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весна 2026 - Календарь сборов Футбо-Кэмп</title>
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <!-- Хлебные крошки -->
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="/">Главная</a></li>
+                <li><a href="index.html">Календарь сборов</a></li>
+                <li><span class="current">Весна 2026</span></li>
+            </ol>
+        </nav>
+<!-- Хлебные крошки_2 -->
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="index.html">Календарь сборов</a></li>
+                <li><span class="current">Весна 2026</span></li>
+            </ol>
+        </nav>
+
+
+        <!-- Заголовок сезона -->
+        <header class="season-header spring">
+            <div class="season-title">
+                <h1><i class="fas fa-seedling"></i> Весна 2026</h1>
+                <p class="season-subtitle">Футбольные сборы в весенний период</p>
+            </div>
+            <div class="season-highlights">
+                <div class="highlight">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>6 смен</span>
+                </div>
+                <div class="highlight">
+                    <i class="fas fa-child"></i>
+                    <span>Возраст 7-15 лет</span>
+                </div>
+                <div class="highlight">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Сириус, Сочи</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Кнопка телефона (фиксированная) -->
+        <div class="floating-phone">
+            <a href="tel:+79939502905" class="phone-float">
+                <i class="fas fa-phone-alt"></i>
+                <span>Уточнить место</span>
+            </a>
+        </div>
+
+        <!-- Месяцы -->
+        <div class="months-accordion">
+            <!-- Март 2026 -->
+            <div class="month-card">
+                <button class="month-header" onclick="calendar.toggleMonth(0)">
+                    <h3><i class="fas fa-calendar"></i> Март 2026</h3>
+                    <span class="toggle-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+                
+                <div class="month-content" id="month-0">
+                    <div class="dates-grid">
+                        <div class="date-card status-available">
+                            <div class="date-header">
+                                <h4>1-8 марта</h4>
+                                <span class="status-badge">
+                                    <i class="fas fa-check-circle"></i> Мест нет
+                                </span>
+                            </div>
+                            
+                            <div class="date-details">
+                                <div class="detail">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Возраст: 7-12 лет</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Места: 0 мест</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-ruble-sign"></i>
+                                    <span>от 60,000 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-actions">
+                                <a href="#booking-form" class="btn-book" onclick="calendar.bookDate('Март 2026', '1- 8 марта')">
+                                    <i class="fas fa-calendar-plus"></i> Забронировать
+                                </a>
+                                <button class="btn-info" onclick="calendar.showDateInfo('1-8 марта')">
+                                    <i class="fas fa-info-circle"></i> Подробнее
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="date-card status-available">
+                            <div class="date-header">
+                                <h4>20-28 марта</h4>
+                                <span class="status-badge">
+                                    <i class="fas fa-check-circle"></i> Мест нет
+                                </span>
+                            </div>
+                            
+                            <div class="date-details">
+                                <div class="detail">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Возраст: 10-15 лет</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Места: 0 мест</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-ruble-sign"></i>
+                                    <span>от 60,000 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-actions">
+                                <a href="#booking-form" class="btn-book" onclick="calendar.bookDate('Март 2026', '20-28 марта')">
+                                    <i class="fas fa-calendar-plus"></i> Забронировать
+                                </a>
+                                <button class="btn-info" onclick="calendar.showDateInfo('20-28 марта')">
+                                    <i class="fas fa-info-circle"></i> Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Апрель 2026 -->
+            <div class="month-card">
+                <button class="month-header" onclick="calendar.toggleMonth(1)">
+                    <h3><i class="fas fa-calendar"></i> Апрель 2026</h3>
+                    <span class="toggle-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+                
+                <div class="month-content" id="month-1">
+                    <div class="dates-grid">
+                        <div class="date-card status-waiting">
+                            <div class="date-header">
+                                <h4>1-8 апреля</h4>
+                                <span class="status-badge">
+                                    <i class="fas fa-clock"></i> Ожидание
+                                </span>
+                            </div>
+                            
+                            <div class="date-details">
+                                <div class="detail">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Возраст: 7-12 лет</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Места: 0 мест</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-ruble-sign"></i>
+                                    <span>от 60,000 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-actions">
+                                <a href="#booking-form" class="btn-book" onclick="calendar.bookDate('Апрель 2026', '1- 8 апреля')">
+                                    <i class="fas fa-calendar-plus"></i> Забронировать
+                                </a>
+                                <button class="btn-info" onclick="calendar.showDateInfo('1-8 апреля')">
+                                    <i class="fas fa-info-circle"></i> Подробнее
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="date-card status-available">
+                            <div class="date-header">
+                                <h4>20-28 апреля</h4>
+                                <span class="status-badge">
+                                    <i class="fas fa-check-circle"></i> Мест нет
+                                </span>
+                            </div>
+                            
+                            <div class="date-details">
+                                <div class="detail">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Возраст: 10-15 лет</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Места: 0 мест</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-ruble-sign"></i>
+                                    <span>от 60,000 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-actions">
+                                <a href="#booking-form" class="btn-book" onclick="calendar.bookDate('Апрель 2026', '20-28 апреля')">
+                                    <i class="fas fa-calendar-plus"></i> Забронировать
+                                </a>
+                                <button class="btn-info" onclick="calendar.showDateInfo('20-28 апреля')">
+                                    <i class="fas fa-info-circle"></i> Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Май 2026 -->
+            <div class="month-card">
+                <button class="month-header" onclick="calendar.toggleMonth(2)">
+                    <h3><i class="fas fa-calendar"></i> Май 2026</h3>
+                    <span class="toggle-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+                
+                <div class="month-content" id="month-2">
+                    <div class="dates-grid">
+                        <div class="date-card status-available">
+                            <div class="date-header">
+                                <h4>1-8 мая</h4>
+                                <span class="status-badge">
+                                    <i class="fas fa-check-circle"></i> Мест нет
+                                </span>
+                            </div>
+                            
+                            <div class="date-details">
+                                <div class="detail">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Возраст: 7-15 лет</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Места: 0 мест</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-ruble-sign"></i>
+                                    <span>от 60,000 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-actions">
+                                <a href="#booking-form" class="btn-book" onclick="calendar.bookDate('Май 2026', '1-8 мая')">
+                                    <i class="fas fa-calendar-plus"></i> Забронировать
+                                </a>
+                                <button class="btn-info" onclick="calendar.showDateInfo('1-8 мая')">
+                                    <i class="fas fa-info-circle"></i> Подробнее
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="date-card status-available">
+                            <div class="date-header">
+                                <h4>20-28 мая</h4>
+                                <span class="status-badge">
+                                    <i class="fas fa-check-circle"></i> Мест нет
+                                </span>
+                            </div>
+                            
+                            <div class="date-details">
+                                <div class="detail">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Возраст: 7-15 лет</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Места: 0 мест</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-ruble-sign"></i>
+                                    <span>от 60,000 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-actions">
+                                <a href="#booking-form" class="btn-book" onclick="calendar.bookDate('Май 2026', '20-28 мая')">
+                                    <i class="fas fa-calendar-plus"></i> Забронировать
+                                </a>
+                                <button class="btn-info" onclick="calendar.showDateInfo('20-28 мая')">
+                                    <i class="fas fa-info-circle"></i> Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Форма бронирования -->
+        <div class="booking-form" id="booking-form">
+            <h3><i class="fas fa-edit"></i> Заявка на бронирование</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="selectedDate"><i class="fas fa-calendar-day"></i> Выбранная дата:</label>
+                    <input type="text" id="selectedDate" readonly class="form-control">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="childName"><i class="fas fa-child"></i> Имя ребенка:</label>
+                        <input type="text" id="childName" required class="form-control" placeholder="Введите имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="childAge"><i class="fas fa-birthday-cake"></i> Возраст:</label>
+                        <input type="number" id="childAge" required class="form-control" min="7" max="15" placeholder="Возраст">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parentPhone"><i class="fas fa-phone-alt"></i> Телефон родителя:</label>
+                    <input type="tel" id="parentPhone" required class="form-control" value="+7 993 950 29 05">
+                </div>
+                
+                <div class="form-group">
+                    <label for="parentEmail"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="parentEmail" required class="form-control" placeholder="email@example.com">
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Отправить заявку
+                    </button>
+                    <a href="tel:+79939502905" class="btn-call">
+                        <i class="fas fa-phone-alt"></i> Позвонить сейчас
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Информация о лагере -->
+        <div class="camp-info">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <h4>Место проведения</h4>
+                <p>Город-отель "Бархатные сезоны" спортивный квартал "Сириус"<br>г. Сочи, ул. Фигурная, 29</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-clock fa-2x"></i>
+                <h4>Длительность смены</h4>
+                <p>8 дней / 7 ночей<br>Информация о заезде и отъезде сообщается дополнительно</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-utensils fa-2x"></i>
+                <h4>Питание</h4>
+                <p>3-разовое сбалансированное шведский стол<br>С учетом спортивных нагрузок</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-user-tie fa-2x"></i>
+                <h4>Тренеры</h4>
+                <p>Лицензированные специалисты<br>Опыт работы с детьми от 5 лет</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/calendar.js"></script>
+    <script>
+        // Инициализация календаря
+        document.addEventListener('DOMContentLoaded', function() {
+            calendar.init();
+        });
+    </script>
+</body>
+</html>
